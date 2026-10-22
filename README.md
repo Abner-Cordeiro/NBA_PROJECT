@@ -1,6 +1,8 @@
-# Baseline — NBA scouting desk
+# Baseline — the season, in focus
 
-An editorial analytics dashboard for fans who like the details behind the box score. Baseline brings a playoff spotlight, a league intensity chart, a sortable player shortlist and a compact game center into one responsive workspace.
+The 2026–27 NBA season is getting underway, and Baseline is my excuse to revisit the film room. It is a fan-made scouting desk built around a 2024–25 season archive: player numbers, playoff storylines and the little details that make a game worth watching. Think of it as a concept for how I would explore a season, not a live scores service.
+
+I wanted the interface to feel closer to a calm analyst’s workspace than another scoreboard: a playoff spotlight, a small league pulse chart, a searchable and sortable player shortlist, and a game-center preview. The sample fixtures and a few dashboard metrics are illustrative; they are labelled as demo data in the UI. Player stats reference the 2024–25 season.
 
 ## Run locally
 
@@ -9,18 +11,17 @@ npm install
 npm run dev
 ```
 
-## What this project demonstrates
+## What is inside
 
 - React with strict TypeScript and typed player/game data
-- Derived, searchable and sortable UI state with `useMemo`
-- Responsive dashboard layout, mobile navigation and accessible controls
-- Custom SVG-free data visualization built from CSS bars
-- Reusable design tokens, CSS-only court illustration and reduced-motion support
+- Search, derived sorting and saved-player UI state
+- Responsive dashboard layout, mobile navigation and reduced-motion support
+- A lightweight chart and court illustration built with CSS
 - Vite production build
 
-## Data note
+## Privacy and external assets
 
-This is a portfolio concept, not a live scores product. Dashboard examples and game scores are illustrative snapshots; player headshots are loaded from the NBA CDN. The data date is shown in the interface.
+Baseline does not collect or transmit form input. Player headshots load from the NBA CDN and fonts load from Google Fonts, so opening the page makes requests to those services. The page sets a `no-referrer` policy. No API keys, credentials or private configuration are required.
 
 ## Stack
 
